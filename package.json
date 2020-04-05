@@ -1,0 +1,21 @@
+{
+  "name": "yassine",
+  "version": "1.0.0",
+  "description": "{",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass Starter-file/sass/fichier.scss Starter-file/dist/css/style.css",
+    "watch": "node-sass Starter-file/sass/fichier.scss Starter-file/dist/css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yassine-moumen/C2N3_C3N3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yassine-moumen/C2N3_C3N3/issues"
+  },
+  "homepage": "https://github.com/yassine-moumen/C2N3_C3N3#readme",
+  "keywords": []
+}

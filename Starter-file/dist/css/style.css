@@ -129,6 +129,8 @@
     @media only screen and (min-width: 1024px) {
       .secti3__recommendation {
         padding: 2rem; } }
+    .secti3__recommendation p {
+      color: black; }
     .secti3__recommendation ul {
       padding: 1rem;
       color: #FFFFFF;
@@ -272,6 +274,8 @@ footer {
     @media only screen and (min-width: 1200px) {
       footer .footer__apro {
         font-size: 120%; } }
+  footer .blc {
+    color: black; }
   footer .bluebg {
     width: 145vw;
     height: 5vh;
@@ -340,6 +344,12 @@ header {
       header nav button img {
         width: 20px; }
 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif; }
+
 .info {
   background-color: #F4CF1B;
   text-align: center;
@@ -363,22 +373,122 @@ header {
   box-sizing: border-box;
   font-family: 'Cairo', sans-serif; }
 
-.info {
-  background-color: #F4CF1B;
-  text-align: center;
-  padding: .5rem;
-  font-size: .8rem;
-  padding: .3rem 2rem 0; }
-  @media only screen and (min-width: 1200px) {
-    .info {
-      font-size: 110%; } }
-  .info h4 {
-    color: #2B2B2C; }
-  .info p {
+.protéger {
+  text-align: center; }
+  .protéger h4 {
+    color: #1078AD;
+    padding: 2rem;
+    max-width: 440px;
+    margin: auto; }
+    @media only screen and (min-width: 1024px) {
+      .protéger h4 {
+        font-size: 170%; } }
+  .protéger p {
     font-weight: bold;
-    max-width: 520px;
+    font-size: 1rem;
     margin: auto;
-    color: #1078AD; }
+    color: #1A519E; }
+  .protéger__advices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 2rem; }
+    @media only screen and (min-width: 1024px) {
+      .protéger__advices {
+        grid-template-columns: 1fr;
+        justify-items: center; } }
+    @media only screen and (min-width: 1024px) {
+      .protéger__advices .conseil {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 80%; } }
+    .protéger__advices .conseil div {
+      display: grid;
+      grid-template-rows: 1.5fr 1fr;
+      justify-items: center;
+      align-self: center;
+      grid-gap: 1rem;
+      margin-top: 2rem; }
+  .protéger__restez {
+    padding: 1rem; }
+  .protéger__info {
+    display: flex;
+    flex-direction: column;
+    background-color: #D0E5F0; }
+    @media only screen and (min-width: 1024px) {
+      .protéger__info {
+        padding: 2rem 1rem;
+        flex-direction: row;
+        align-items: center; } }
+    .protéger__info h2 {
+      color: #1078AD;
+      font-size: 2rem; }
+    .protéger__info p {
+      padding: 0 3rem 2rem;
+      color: #1A519E;
+      font-size: 0rem; }
+      @media only screen and (min-width: 1024px) {
+        .protéger__info p {
+          font-size: 130%;
+          margin: 0 5rem; } }
+    .protéger__info button {
+      background-color: #1078AD;
+      border: none;
+      border-radius: 5px;
+      color: #FFFFFF;
+      font-weight: bold;
+      font-size: 1rem;
+      margin: 1rem auto;
+      padding: 1rem;
+      width: 254px;
+      transition-duration: 0.3s; }
+      .protéger__info button:hover {
+        opacity: .5;
+        box-shadow: 0px 2px #2B2B2C; }
+      .protéger__info button:active {
+        transform: scale(0.9); }
+
+.symptômes {
+  padding: .5rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 800px;
+  margin: auto; }
+  @media only screen and (min-width: 1200px) {
+    .symptômes {
+      padding: 2rem 4rem; } }
+  @media only screen and (min-width: 768px) {
+    .symptômes {
+      padding: 3rem;
+      grid-column-gap: 5rem; } }
+  .symptômes h2 {
+    color: #1078AD;
+    padding: 1rem 3.5rem;
+    grid-column: 1/3; }
+    @media only screen and (min-width: 1200px) {
+      .symptômes h2 {
+        font-size: 200%; } }
+  .symptômes h3 {
+    color: #1078AD;
+    padding: 1rem 3.5rem;
+    grid-column: 1/3;
+    grid-row: 4/5; }
+    @media only screen and (min-width: 1200px) {
+      .symptômes h3 {
+        font-size: 200%; } }
+  .symptômes p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1A519E; }
+  .symptômes img {
+    width: 50%; }
+  .symptômes__fièvre img {
+    width: 30%; }
+  .symptômes__face .imgs {
+    width: 49%; }
+  .symptômes div {
+    padding: 1rem;
+    width: 100%; }
 
 * {
   margin: 0px;

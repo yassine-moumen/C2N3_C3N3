@@ -1,0 +1,68 @@
+//Mixins
+@mixin button1 {
+    background-color: transparent;
+    border: 2px solid #1078AD;
+    border-radius: 10px;
+    padding: .1rem .5rem;
+    display: flex;
+    align-items: center;
+    height: 1.5rem;
+    font-size: .7rem;
+    transition-duration: 0.3s;
+
+
+    &:hover {
+        opacity: .5;
+        box-shadow: 0px 2px $black;
+    }
+
+    &:active {
+        transform: scale(0.9);
+    }
+
+    img {
+        width: 20px;
+    }
+}
+
+@mixin button2($a:1.3rem, $b:80%) {
+    font-size: 1, 3rem;
+    font-weight: bold;
+    background: url(../../../Design/Assets/png/demarrer.png);
+    border: none;
+    border-radius: 5px;
+    width: 53%;
+    height: 65px;
+
+}
+
+@mixin links {
+    text-decoration: none;
+    color: $black;
+    font-weight: bold;
+    transition-duration: 0.3s;
+
+    &:hover {
+        color: $color1;
+    }
+}
+
+
+//Responsive
+@mixin tab {
+    @media only screen and (min-width:768px) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media only screen and (min-width:1024px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width:1200px) {
+        @content;
+    }
+}

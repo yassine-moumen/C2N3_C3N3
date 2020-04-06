@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: url(../../../Design/Assets/png/Merged-bar-1.png);
+    height: 128px;
+
+    img {
+        width: 6%;
+    }
+
+    nav {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include laptop() {
+            width: 40%;
+        }
+
+        @include desktop() {
+            font-size: 150%;
+        }
+
+        ul {
+            width: 60%;
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+
+            li {
+                a {
+                    @include links;
+                }
+            }
+        }
+
+        button {
+            @include button1();
+        }
+    }
+}

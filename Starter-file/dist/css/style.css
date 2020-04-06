@@ -339,3 +339,49 @@ header {
         transform: scale(0.9); }
       header nav button img {
         width: 20px; }
+
+.info {
+  background-color: #F4CF1B;
+  text-align: center;
+  padding: .5rem;
+  font-size: .8rem;
+  padding: .3rem 2rem 0; }
+  @media only screen and (min-width: 1200px) {
+    .info {
+      font-size: 110%; } }
+  .info h4 {
+    color: #2B2B2C; }
+  .info p {
+    font-weight: bold;
+    max-width: 520px;
+    margin: auto;
+    color: #1078AD; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif; }
+
+.info {
+  background-color: #F4CF1B;
+  text-align: center;
+  padding: .5rem;
+  font-size: .8rem;
+  padding: .3rem 2rem 0; }
+  @media only screen and (min-width: 1200px) {
+    .info {
+      font-size: 110%; } }
+  .info h4 {
+    color: #2B2B2C; }
+  .info p {
+    font-weight: bold;
+    max-width: 520px;
+    margin: auto;
+    color: #1078AD; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif; }

@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+
+
+}
+
+.info {
+    background-color: $color2;
+    text-align: center;
+    padding: .5rem;
+    font-size: .8rem;
+    padding: .3rem 2rem 0;
+
+    @include desktop() {
+        font-size: 110%;
+    }
+
+    h4 {
+        color: $black;
+    }
+
+    p {
+        font-weight: bold;
+        max-width: 520px;
+        margin: auto;
+        color: $color1;
+        ;
+
+    }
+}

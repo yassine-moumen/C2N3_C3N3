@@ -129,8 +129,6 @@
     @media only screen and (min-width: 1024px) {
       .secti3__recommendation {
         padding: 2rem; } }
-    .secti3__recommendation p {
-      color: black; }
     .secti3__recommendation ul {
       padding: 1rem;
       color: #FFFFFF;
@@ -274,8 +272,6 @@ footer {
     @media only screen and (min-width: 1200px) {
       footer .footer__apro {
         font-size: 120%; } }
-  footer .blc {
-    color: black; }
   footer .bluebg {
     width: 145vw;
     height: 5vh;

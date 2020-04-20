@@ -259,7 +259,7 @@
             }
 
             @include desktop() {
-                font-size: 150%;
+                font-size: 28px;
             }
         }
 
@@ -271,7 +271,7 @@
             @include button2($a:1rem, $b:40%);
 
             @include desktop() {
-                font-size: 150%;
+                font-size: 38px;
             }
         }
 

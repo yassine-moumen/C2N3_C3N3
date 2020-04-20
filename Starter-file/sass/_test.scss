@@ -1,0 +1,55 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+
+
+}
+
+.Préambule {
+    position: relative;
+    background-color: #96C5DC;
+    width: 79%;
+    /* TEXT-ALIGN: center; */
+    margin: auto;
+    height: 151%;
+    padding: 32PX;
+    margin: 64px;
+
+    @include desktop() {
+        font-size: 110%;
+        width: 90%;
+    }
+
+    &__titre {
+        text-align: center;
+        color: $color1;
+
+    }
+
+    &__line {
+        border: 3px solid $color2;
+        width: 47%;
+        margin: AUTO;
+    }
+
+    &__text {
+        padding: 1rem;
+    }
+}
+
+.btn {
+    font-weight: bold;
+    background-color: $color1;
+    border: none;
+    border-radius: 5px;
+    width: 57%;
+    height: 53px;
+    left: 21%;
+    color: white;
+    font-size: 30PX;
+    margin-bottom: 67px;
+    position: relative;
+
+}

@@ -28,7 +28,7 @@ footer {
 
         @include laptop() {
             grid-column: 1/4;
-            margin-bottom: 2rem;
+            margin-bottom: 0rem;
         }
     }
 

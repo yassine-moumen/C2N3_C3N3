@@ -5,7 +5,25 @@
     font-family: 'Cairo', sans-serif;
 
 
+    :lang(fr) [data-fr] {
+        display: block;
+    }
+
+    :lang(fr) [data-ar] {
+        display: none;
+    }
+
+    :lang(ar) [data-ar] {
+        display: block;
+        direction: rtl
+    }
+
+    :lang(ar) [data-fr] {
+        display: none;
+    }
+
 }
+
 
 header {
     display: flex;
@@ -27,10 +45,12 @@ header {
 
         @include laptop() {
             width: 40%;
+
         }
 
         @include desktop() {
             font-size: 150%;
+
         }
 
         ul {
@@ -48,6 +68,8 @@ header {
 
         button {
             @include button1();
+            height: 2.5rem;
+
         }
     }
 }

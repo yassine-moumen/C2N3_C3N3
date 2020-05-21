@@ -1,55 +1,303 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Cairo', sans-serif;
+// * {
+//     margin: 0px;
+//     padding: 0px;
+//     box-sizing: border-box;
+//     font-family: 'Cairo', sans-serif;
+
+
+// }
+
+.line {
+    padding-top: 2em;
+    max-width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+    &__bigcercle {
+        width: 40px;
+        height: 40px;
+        margin: 0 auto;
+        background-color: $btn_color;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    &__smallcercle {
+        width: 15px;
+        height: 15px;
+        background-color: gold;
+        border-radius: 50%;
+        margin: 0 auto;
+
+
+    }
 
 
 }
 
-.Préambule {
-    position: relative;
+.preamb {
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
     background-color: #96C5DC;
-    width: 79%;
-    /* TEXT-ALIGN: center; */
-    margin: auto;
-    height: 151%;
-    padding: 32PX;
-    margin: 64px;
+    border-radius: 10px;
 
-    @include desktop() {
-        font-size: 110%;
-        width: 90%;
+    &__title {
+        font-size: 1.5em;
+        color: $color1;
     }
 
-    &__titre {
-        text-align: center;
-        color: $color1;
+    &__info {
+        max-width: 95%;
+        margin: auto;
+        margin-bottom: 1em;
 
+        &--seco {
+            padding-top: .7em;
+            max-width: 95%;
+            margin: auto;
+        }
     }
 
     &__line {
-        border: 3px solid $color2;
-        width: 47%;
-        margin: AUTO;
+        border-bottom: 3px solid gold;
+        width: 40%;
+        margin: auto;
     }
 
-    &__text {
-        padding: 1rem;
+
+}
+
+.startb {
+    text-align: center;
+    margin: 1em;
+
+    &__btn {
+        font-size: 1, 3rem;
+        font-weight: bold;
+        background: url(../../../Design/Assets/png/demarrer.png);
+        border: none;
+        border-radius: 5px;
+        width: 43%;
+        height: 60px;
+        margin: auto;
+        margin-bottom: 10px;
+        cursor: pointer
     }
 }
 
-.btn {
-    font-weight: bold;
-    background-color: $color1;
-    border: none;
-    border-radius: 5px;
-    width: 57%;
-    height: 53px;
-    left: 21%;
-    color: white;
-    font-size: 30PX;
-    margin-bottom: 67px;
-    position: relative;
 
+.progressBar {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    display: none;
+
+    .prognum {
+        font-weight: 700;
+        color: $color1;
+        margin-bottom: -22px;
+    }
+
+    .bar {
+        width: 80%;
+        height: 2em;
+        border-radius: 1em;
+        background-color: #96c5dc;
+        margin: auto;
+        left: 12%;
+
+        .progress {
+            background-color: $color6;
+            width: 0;
+            height: 100%;
+            border-radius: 1em;
+            margin: 0;
+
+        }
+    }
+}
+
+
+#question_1 {
+    display: none;
+}
+
+.questions {
+
+
+    padding: 15px;
+
+
+    .question_1 {
+        display: none;
+        width: 60%;
+        margin: auto;
+        margin-top: 50px;
+        padding-bottom: 1em;
+        text-align: center;
+        color: $btn_color;
+
+    }
+
+
+
+
+}
+
+
+.radio_1 {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+    padding: 30px 0;
+    display: block;
+
+    .option {
+        position: relative;
+
+
+        input {
+            display: none;
+        }
+
+        label {
+            font-size: 20px;
+            cursor: pointer;
+            color: $color1;
+            margin-left: 20px;
+            padding: 10px 0;
+        }
+    }
+
+    .option label::after {
+        position: absolute;
+        content: "";
+        width: 25px;
+        height: 25px;
+        border: 4px solid #1078ad;
+        border-radius: 50%;
+        left: -22px;
+        top: 2px;
+    }
+
+    .option label::before {
+        position: absolute;
+        content: "";
+        width: 16px;
+        height: 16px;
+        background-color: gold;
+        border-radius: 50%;
+        left: -14px;
+        top: 10.5px;
+        opacity: 1;
+        display: none;
+
+    }
+
+    .option input:checked~label::before {
+        display: block;
+
+    }
+}
+
+
+.consei {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    background-color: gold;
+    border-radius: 10px;
+    margin: auto;
+
+
+}
+
+
+
+.btns {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 50px;
+
+
+    .btn-return button,
+    .btn_next button {
+        background-color: $btn_color;
+        border-radius: 10px;
+        padding: 0 .8em;
+        color: #fff;
+        cursor: pointer;
+
+
+    }
+
+    .return {
+        opacity: 0;
+    }
+
+
+}
+
+.hide {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+
+
+
+.radioflex {
+    margin-top: 1em;
+}
+
+
+.fourchoices {
+    display: flex;
+    justify-content: space-evenly;
+
+    .choices {
+        display: flex;
+        width: 250px;
+        justify-content: flex-end;
+        align-items: center;
+
+        input {
+            margin: 1em 20%;
+        }
+    }
+
+}
+
+.btnRestart {
+    background: url("../../../Design/Assets/png/btn.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 15em;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-top: 1em;
+    cursor: pointer
+}
+
+.afficheResult {
+    h3 {
+        width: 80%;
+        margin: auto;
+        margin-top: 1em;
+        color: $btn_color;
+    }
 }

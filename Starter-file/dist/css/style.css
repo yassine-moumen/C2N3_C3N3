@@ -38,7 +38,8 @@
     @media only screen and (min-width: 1200px) {
       .secti1__part2 p {
         font-size: 103%; } }
-  .secti1__part2 button {
+  .secti1__part2 .button {
+    cursor: pointer;
     font-size: 1, 3rem;
     font-weight: bold;
     background: url(../../../Design/Assets/png/demarrer.png);
@@ -49,7 +50,7 @@
     margin: auto;
     margin-bottom: 10px; }
     @media only screen and (min-width: 1200px) {
-      .secti1__part2 button {
+      .secti1__part2 .button {
         font-size: 120%; } }
 
 .secti2 {

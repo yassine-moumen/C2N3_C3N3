@@ -60,7 +60,9 @@
             }
         }
 
-        button {
+        .button {
+            cursor: pointer;
+
             @include button2();
 
             @include desktop() {
